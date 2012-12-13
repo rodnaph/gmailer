@@ -20,8 +20,8 @@ Usage
 -----
 
 Gmailer assumes you already have a valid OAuth access token.  Obtaining this
-access token is outside the scope of this library.  When you have the token
-though, it's easy to use:
+access token is outside the scope of this library (but there is some info
+further down the page!).  When you have the token though, it's easy to use:
 
 ```clojure
 (ns my.project
@@ -35,4 +35,19 @@ though, it's easy to use:
 ```
 
 All access should be wrapped in the _with-credentials_ macro.
+
+Getting a Token
+---------------
+
+For development the easiest way to get an OAuth token is to go here:
+
+https://developers.google.com/oauthplayground/
+
+Then select Gmail from the API's listed on the left, and enter the scope:
+
+https://mail.google.com/
+
+Click authorise, grant permissions and you should be dumped on a page where
+you can click a button to exchange your authorisation token for a lovely new
+access token.
 
